@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function UsuarioSecundario() {
     const navigation = useNavigation();
-    const [selectedGender, setSelectedGender] = useState(); // useState needs to be imported
+    const [selectedGender, setSelectedGender] = useState();
 
     return (
         <View style={styles.container}>
@@ -38,10 +38,14 @@ export default function UsuarioSecundario() {
                     <Picker.Item label="Feminino" value="fem" />
                     <Picker.Item label="Masculino" value="masc" />
                 </Picker>
+                
+                <TouchableOpacity style={styles.button} >
+                    <Text style={styles.buttontext} onPress={() => navigation.navigate('Cadastro')}>Anterior</Text>
+                    <Text style={styles.buttontext} onPress={() => navigation.navigate('UsuarioSecundario')}>Próximo</Text>
+                </TouchableOpacity>
+                
             </Animatable.View>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('UsuarioSecundario')}>
-                    <Text style={styles.buttonproximo}>Próximo</Text>
-            </TouchableOpacity>
+            
         </View>
     );
 }
@@ -50,8 +54,6 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: "#6a1b9a",
-    },
-    containerHeader: {
     },
     message: {
         marginTop: '5%',
@@ -85,10 +87,12 @@ const styles = StyleSheet.create({
       marginRight: "5%",
     },
     button: {
-        alignItems: "flex-end",
+        marginTop:50,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
-    buttonproximo: {
-        fontSize: 28,
+    buttontext:{
+        fontSize: 20,
         color: "#fff",
         backgroundColor: "#6a1b9a",
         paddingVertical: 15,

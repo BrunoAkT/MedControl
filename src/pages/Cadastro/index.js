@@ -81,12 +81,13 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     buttontext:{
-        fontSize: 28,
+        fontSize: 20,
         color: "#fff",
         backgroundColor: "#6a1b9a",
         paddingVertical: 15,
         paddingHorizontal: 25,
         marginRight: '5%',
         borderRadius: 10,
+        
     },
 })
