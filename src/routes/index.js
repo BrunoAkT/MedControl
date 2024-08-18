@@ -3,7 +3,7 @@ import MedControl from '../pages/MedControl/MedControl-index'
 import Cadastro from '../pages/Cadastro/cadastro-index'
 import UsuarioSecundario from '../pages/UsuarioSecundario/UsuarioSec-index'
 import Entrar from "../pages/Entrar/Entrar-index";
-Import Home f
+Import Home from "../pages/Home/homeIndex.js";
 
 const Stack = createNativeStackNavigator();
 
