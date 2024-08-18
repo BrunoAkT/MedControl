@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import { View, Text, StyleSheet, TextInput,
+TouchableOpacity } from "react-native";
 import { Picker } from '@react-native-picker/picker';
 import * as Animatable from "react-native-animatable";
 import { useNavigation } from '@react-navigation/native';
@@ -38,6 +39,9 @@ export default function UsuarioSecundario() {
                     <Picker.Item label="Masculino" value="masc" />
                 </Picker>
             </Animatable.View>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('UsuarioSecundario')}>
+                    <Text style={styles.buttonproximo}>Próximo</Text>
+            </TouchableOpacity>
         </View>
     );
 }
@@ -48,7 +52,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#6a1b9a",
     },
     containerHeader: {
-
     },
     message: {
         marginTop: '5%',
@@ -80,5 +83,17 @@ const styles = StyleSheet.create({
       marginTop: 5,
       fontSize: 18,
       marginRight: "5%",
+    },
+    button: {
+        alignItems: "flex-end",
+    },
+    buttonproximo: {
+        fontSize: 28,
+        color: "#fff",
+        backgroundColor: "#6a1b9a",
+        paddingVertical: 15,
+        paddingHorizontal: 25,
+        marginRight: '5%',
+        borderRadius: 10,
     },
 })
