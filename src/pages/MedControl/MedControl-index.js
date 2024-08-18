@@ -23,7 +23,7 @@ export default function MedControl() {
                 <Text style={styles.texto}>Faça o Login para começar!</Text>
                 <TouchableOpacity 
                     style={styles.button}
-                    onPress={()=>navigation.navigate('SignIn')}
+                    onPress={()=>navigation.navigate('Entrar')}
                 >
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>

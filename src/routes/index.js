@@ -3,13 +3,13 @@ import MedControl from '../pages/MedControl/MedControl-index'
 import Cadastro from '../pages/Cadastro/cadastro-index'
 import UsuarioSecundario from '../pages/UsuarioSecundario/UsuarioSec-index'
 import Entrar from "../pages/Entrar/Entrar-index";
-Import Home from "../pages/Home/homeIndex.js";
+import Home from "../pages/Home/homeIndex.js";
 
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
     return (
-        <Stack.Navigator initialRouteName="Cadastro">
+        <Stack.Navigator initialRouteName="MedControl">
             <Stack.Screen
                 name="MedControl"
                 component={MedControl}
@@ -28,6 +28,11 @@ export default function Routes() {
             <Stack.Screen
                 name="UsuarioSecundario"
                 component={UsuarioSecundario}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="Home"
+                component={Home}
                 options={{ headerShown: false }}
             />
         </Stack.Navigator>
