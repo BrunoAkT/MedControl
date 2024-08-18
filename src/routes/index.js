@@ -1,9 +1,9 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import MedControl from '../pages/MedControl/MedControl-index'
-import Entrar from '../pages/Entrar/Entrar-index'
 import Cadastro from '../pages/Cadastro/cadastro-index'
 import UsuarioSecundario from '../pages/UsuarioSecundario/UsuarioSec-index'
 import Entrar from "../pages/Entrar/Entrar-index";
+Import Home f
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +17,7 @@ export default function Routes() {
             />
             <Stack.Screen
                 name="Entrar"
-                component={Entrar} // Aqui estamos utilizando o SignIn que tem o botão para ir a Cadastro
+                component={Entrar} 
                 options={{ headerShown: false }}
             />
             <Stack.Screen

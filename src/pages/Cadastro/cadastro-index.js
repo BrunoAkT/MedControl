@@ -29,7 +29,7 @@ export default function Cadastro() {
                 style={styles.input}/>
                 
                 <TouchableOpacity style={styles.button} >
-                    <Text style={styles.buttontext} onPress={() => navigation.navigate('Cadastro')}>Anterior</Text>
+                    <Text style={styles.buttontext} onPress={() => navigation.navigate('Entrar')}>Anterior</Text>
                     <Text style={styles.buttontext} onPress={() => navigation.navigate('UsuarioSecundario')}>Próximo</Text>
                 </TouchableOpacity>
                 
