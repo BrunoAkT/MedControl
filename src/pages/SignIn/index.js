@@ -17,7 +17,7 @@ export default function SignIn() {
 
                 <Text style={styles.title}>E-mail:</Text>
                 <TextInput
-                placeholder="Digite  um E-mail..."
+                placeholder="Digite um E-mail..."
                 style={styles.input}/>
 
 
