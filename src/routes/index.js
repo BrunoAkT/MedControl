@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 
 export default function Routes() {
     return (
-        <Stack.Navigator initialRouteName="MedControl">
+        <Stack.Navigator initialRouteName="Cadastro">
             <Stack.Screen
                 name="MedControl"
                 component={MedControl}

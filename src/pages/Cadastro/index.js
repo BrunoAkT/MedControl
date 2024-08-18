@@ -28,8 +28,9 @@ export default function Cadastro() {
                 placeholder="Confirmação"
                 style={styles.input}/>
 
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('UsuarioSecundario')}>
-                    <Text style={styles.buttonText}>Próximo</Text>
+                <TouchableOpacity style={styles.button} >
+                    <Text style={styles.buttonanterior} onPress={() => navigation.navigate('Cadastro')}>Anterior</Text>
+                    <Text style={styles.buttonproximo} onPress={() => navigation.navigate('UsuarioSecundario')}>Próximo</Text>
                 </TouchableOpacity>
 
             </Animatable.View>
@@ -70,5 +71,29 @@ const styles = StyleSheet.create({
         height: 40,
         marginBottom: 12,
         fontSize: 16,
+        marginRight: '5%',
+    },
+    button: {
+        alignItems: "flex-end",
+    },
+    buttonanterior:{
+        alignItems: "flex-end"
+        fontSize: 28,
+        color: "#fff",
+        backgroundColor: "#6a1b9a",
+        paddingVertical: 15,
+        paddingHorizontal: 25,
+        marginRight: '5%',
+        borderRadius: 10,
+    },
+    buttonproximo: {
+        alignItems: "flex-end",
+        fontSize: 28,
+        color: "#fff",
+        backgroundColor: "#6a1b9a",
+        paddingVertical: 15,
+        paddingHorizontal: 25,
+        marginRight: '5%',
+        borderRadius: 10,
     },
 })

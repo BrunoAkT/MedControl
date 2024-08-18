@@ -28,7 +28,7 @@ export default function UsuarioSecundario() {
                     style={styles.input}
                 />
 
-                <Text style={styles.title}>Informe seu sexo:</Text>
+                <Text style={styles.title}>Informe seu Sexo Biologico:</Text>
                 <Picker
                     selectedValue={selectedGender}
                     style={styles.picker}
@@ -43,19 +43,27 @@ export default function UsuarioSecundario() {
 }
 
 const styles = StyleSheet.create({
-
     container:{
         flex: 1,
         backgroundColor: "#6a1b9a",
     },
     containerHeader: {
+
     },
     message: {
+        marginTop: '5%',
+        marginBottom: '3%',
+        paddingStart: "5%",
         fontSize: 28,
         fontWeight: "bold",
         color: "#fff",
     },
     containerForm: {
+        flex: 1,
+        backgroundColor: "white",
+        paddingStart: "5%",
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
     },
     title: {
         fontSize: 20,
@@ -65,29 +73,12 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         height: 40,
         marginBottom: 12,
+        marginRight: "5%",
         fontSize: 16,
-
     },
-    button: {
-        backgroundColor: "#6a1b9a",
-        width: '100%',
-        borderRadius: 4,
-        paddingVertical: 8,
-        marginTop: 14,
-        justifyContent: "center",
-        alignItems: "center",
+    picker: {
+      marginTop: 5,
+      fontSize: 18,
+      marginRight: "5%",
     },
-    buttonText:{
-        color: "#fff",
-        fontSize: 20,
-        fontWeight: "bold",
-
-    },
-    registerbutton:{
-        marginTop: 12,
-        alignSelf: "center",
-    },
-    registerText:{
-        color: "grey",
-    }
 })
