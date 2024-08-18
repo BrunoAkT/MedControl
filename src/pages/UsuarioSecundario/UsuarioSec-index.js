@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#6a1b9a",
     },
     message: {
-        marginTop: '5%',
-        marginBottom: '3%',
+        marginTop: 100,
+        marginBottom: 100,
         paddingStart: "5%",
         fontSize: 28,
         fontWeight: "bold",
