@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import MedControl from '../pages/MedControl'
-import SignIn from '../pages/SignIn'
-import Cadastro from '../pages/Cadastro'
-import UsuarioSecundario from '../pages/UsuarioSecundario'
+import MedControl from '../pages/MedControl/MedControl-index'
+import SignIn from '../pages/SignIn/Entrar-index'
+import Cadastro from '../pages/Cadastro/cadastro-index'
+import UsuarioSecundario from '../pages/UsuarioSecundario/UsuarioSec-index'
 
 const Stack = createNativeStackNavigator();
 
